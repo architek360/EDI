@@ -52,13 +52,15 @@
   </Choose>
   <ItemGroup>
     <Compile Include="MakeTheseTestsPass.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ordering\Ordering.csproj">
       <Project>{E363D153-5D54-4F90-92D5-A88D3E78F945}</Project>
       <Name>Ordering</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

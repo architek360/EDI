@@ -38,19 +38,25 @@ namespace Ordering
 
     public class Address
     {
+        public string Id { get; protected set; }
         public string Street { get; protected set; }
         public string City { get; protected set; }
         public string State { get; protected set; }
+        public string ShortState { get; protected set; }
         public string Country { get; protected set; }
+        public string ShortCountry { get; protected set; }
         public string PostalCode { get; protected set; }
 
-        public Address(string street, string city, string state, string country, string postalCode)
+        public Address(string id, string street, string city, string state,string shortState, string country,string shortCountry, string postalCode)
         {
+            Id = id;
             Street = street;
             City = city;
             State = state;
             Country = country;
             PostalCode = postalCode;
+            ShortState = shortState;
+            ShortCountry = shortCountry;
         }
     }
 
